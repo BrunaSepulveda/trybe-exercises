@@ -3,4 +3,5 @@ let totalsum = 0;
 for (let indice = 0; indice< numbers.length; indice +=1){
     totalsum=totalsum + numbers[indice];
 }
-console.log(`A Soma de todos os números do array é ${totalsum} `);
+let arithmeticAverage = (totalsum/numbers.length);
+console.log(`A média aritimética do array é ${arithmeticAverage} `);

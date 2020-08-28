@@ -4,4 +4,9 @@ for (let indice = 0; indice< numbers.length; indice +=1){
     totalsum=totalsum + numbers[indice];
 }
 let arithmeticAverage = (totalsum/numbers.length);
+
 console.log(`A média aritimética do array é ${arithmeticAverage} `);
+if (arithmeticAverage< 20){
+    console.log(` valor maior que 20`)}
+    else { console.log(`valor menor que 20`)
+    }

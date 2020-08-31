@@ -32,3 +32,12 @@ for (let indice = 0; indice< numbers.length; indice +=1){
 
 if(oddNumber === 0) {console.log (`nenhum número ímpar encontrado`)}
 else {console.log(`Há ${oddNumber} números ímpares`)};
+
+let smallestNumber = numbers[0];
+
+for (let indice = 1; indice< numbers.length; indice +=1){
+    if (smallestNumber > numbers[indice]) {
+            smallestNumber = numbers[indice]
+    }
+};
+console.log(`O menor numero desse array é o  ${smallestNumber} `);

@@ -41,3 +41,11 @@ for (let indice = 1; indice< numbers.length; indice +=1){
     }
 };
 console.log(`O menor numero desse array é o  ${smallestNumber} `);
+
+let numbers25 = [];
+
+for (let i = 1; i <= 25; i += 1) {
+  numbers25.push(i);
+}
+
+console.log(numbers25);

@@ -33,7 +33,7 @@ for (lineIndex = 0; lineIndex < n; lineIndex += 1) {
   inputLine = '';
   inputPosition -= 1;
 };
-//quarta questão
+//quarta questão essa eu não entendi!
 let n = 5;
 let lineIndex;
 let lineColumn;

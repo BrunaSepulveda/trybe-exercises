@@ -34,9 +34,15 @@
   </label>
   <button id="area-button">Calculate</button> 
   <br><br>
-  <div id="solution"></div>
+  <div id="solution">
+      <ul class = "solution-list"></ul>
+  </div>
 
   <script>
+    let solutionList = document.querySelector('.solution-list')
+    let solutionListItem1 = document.createElement('li')
+    let solutionListItem2 = document.createElement('li')
+
     let button1 = document.getElementById('square-button');
     button1.addEventListener("click", squareNumber);
     function squareNumber () {
@@ -44,16 +50,19 @@
         let solution = document.querySelector("#solution");
         let exponent = 2;
         let square = numberIn ** exponent;
-        solution.innerHTML = "O quadrado do número " + numberIn + " é " + square + ".";
+        solutionListItem1.innerText  = "O quadrado do número " + numberIn + " é " + square + ".";
+        solutionList.appendChild(solutionListItem1);
     }
-    let button1 = document.getElementById('square-button');
-    button1.addEventListener("click", squareNumber);
-    function squareNumber () {
-        let numberIn = document.querySelector("#square-input").value;
+
+    let button2 = document.getElementById('half-button');
+    button2.addEventListener("click", halfNumber);
+    function halfNumber () {
+        let numberIn = document.querySelector("#half-input").value;
         let solution = document.querySelector("#solution");
-        let exponent = 2;
-        let square = numberIn ** exponent;
-        solution.innerHTML = "O quadrado do número " + numberIn + " é " + square + ".";
+        let divider = 2;
+        let half = numberIn / divider;
+        solutionListItem2.innerText  = "A metade do número " + numberIn + " é " + half + ".";
+        solutionList.appendChild(solutionListItem2);
     }
   </script>
 </body>

@@ -19,6 +19,13 @@
       <div class="tarefa1">Adicione o botão aqui!</div>
       <br>
       <button id = "alert-button">Alert</button>
+      <script language="javascript" type="text/javascript">
+        // Tarefa 1
+        let buttonAlert = document.getElementById('alert-button');
+        buttonAlert.addEventListener("click", function () {
+          alert("Você clicou no botão");
+        });
+    </script> 
       <hr />
       <h2>Tarefa 2</h2>
       <p>
@@ -33,17 +40,16 @@
         exibir um alerta contendo a mensagem "Desconto de R$(resultado)", sendo
         <strong>discount</strong> o resultado da multiplicação.
       </p>
+      <button id ="discount-button">Desconto</button>
       <script language="javascript" type="text/javascript">
-        // Tarefa 1
-        let buttonAlert = document.getElementById('alert-button');
-        buttonAlert.addEventListener("click", function () {
-          alert("Você clicou no botão");
+      let productPrice = 59.99
+      let discount = 0.3
+      let result = productPrice * discount;
+      let buttonDiscount = document.getElementById('discount-button');
+        buttonDiscount.addEventListener("click", function () {
+          alert("Desconto de R$" + result.toFixed(2) + "!");
         });
-    </script> 
-      <script language="javascript" type="text/javascript">
-        //JavaScript para a tarefa 2
-        //JavaScript para a tarefa 2
-        //JavaScript para a tarefa 2
+        //vi o tofixed na resposta e usei
       </script>
       <hr />
       <h2>Bônus</h2>

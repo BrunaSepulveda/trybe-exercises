@@ -1,0 +1,13 @@
+fieldset {
+    width: 60%;
+    margin: 0 auto 20px auto;
+}
+div {
+    margin: 0px 10px 15px 10px;
+}
+textarea {
+    width: 100%;
+}
+#desc-cargo {
+    width: 75%;
+}

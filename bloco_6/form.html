@@ -6,39 +6,45 @@
     <title>Formulário tipo currículo</title>
     <link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css">
     <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form class="ui form" action="" method="get">
 
         <h2 class="ui header">Dados Pessoais</h2>
-        <div class="field">
-            <label for="name">Nome</label>
-            <input type="text" name="" id="name" maxlength="40" required="required" placeholder="Nome Completo">
+        <div class="fields">
+            <div class="ui inline field">
+                <label for="name" class="ui label">Nome</label>
+                <input class="" type="text" name="" id="name" maxlength="40" required="required" placeholder="Nome Completo">
         </div>
-        <div class="field">
-            <label for="email">E-mail</label>
+        <div class="ui inline field">
+            <label for="email" class="ui label">E-mail</label>
             <input type="text" name="" id="email" maxlength="50" required="required" placeholder="E-mail para contato">
         </div>
-        <div class="field">
-            <label for="cpf">CPF</label>
+        <div class="ui inline field">
+            <label for="cpf" class="ui label">CPF</label>
             <input type="text" name="" id="cpf" maxlength="11" required="required" placeholder="CPF sem ponto ou hífen">
         </div>
-        <div class="field">
-            <label for="cidade">Cidade</label>
+    </div>
+    <div class="fields">
+        <div class="ui inline field">
+            <label for="cidade" class="ui label">Cidade</label>
             <input type="text" name="" id="cidade" maxlength="28" required="required" placeholder="Cidade onde reside">
         </div>
-        <div class="field">
-            <label for="estado">Estado</label>
+        <div class="ui inline field">
+            <label for="estado" class="ui label">Estado</label>
             <select class="ui dropdown" name="estado" id="estado" required="required"></select>
         </div>
-        <div class="inline fields">
+            <div class="inline fields">
             <label for="tipo">Tipo de residência:</label>
             <div class="field">
                 <div class="ui radio checkbox">
-                    <input type="radio" name="tipo" value="casa" id="residencia-casa">
-                    <label for="residencia-casa">Casa</label>
+                <input type="radio" name="tipo" value="casa" id="residencia-casa">
+                <label for="residencia-casa">Casa</label>
                 </div>
             </div>
+    </div>
+   
             <div class="field">
                 <div class="ui radio checkbox">
                     <input type="radio" name="tipo" value="apt" id="residencia-apt">

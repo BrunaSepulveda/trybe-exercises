@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  header nav ul li {
+    cursor: pointer;
+    opacity: 0.8;
+ }
+ header nav ul li:hover {
+     opacity: 1;
+ }
+ .menu li {
+    list-style-type: none;
+    margin: 0;
+ }
+ .menu {
+     display: flex;
+     justify-content: space-evenly;
+     margin:0;
+     padding: 0;
+ }
+ .aside-one {
+    margin: 20px 0;
+ }
+ .aside-one h2 {
+     background-color: gainsboro;
+    padding: 15px;
+ }
+ .aside-two {
+    margin: 20px 0;
+ }
+ .aside-two h2 {
+   background-color: gainsboro;
+   padding: 15px;
+}
+.main-content h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 70px;
+    background-image:url(2242984.png);
+    background-size: contain;
+    filter: url(2242984.jpg);
+    filter: sepia(10%);
+}
+.main-content {
+    margin: 20px;
+}
+/*fundo do coelho <a href='https://br.freepik.com/vetores/fundo'>Fundo vetor criado por freepik - br.freepik.com</a> */
+.main-content p:first-letter {
+    font-size: 200%;
+    color: #993333;
+    font-weight: bold;
+    }
+footer {
+    padding: 20px;
+    color: whitesmoke;
+    background-color: black;
+} 
+@media screen and (max-width:500px) {
+    header {
+        background-color: darkseagreen;
+        justify-content: center;
+        width: 100%;
+    } 
+    header p {
+          font-size: 1.3rem;
+      }
+    header nav, .menu {
+        width: 100%;
+    }
+    .main-content h1 {
+        font-size: 2rem;
+        padding: 300px 0;
+    }
+  }

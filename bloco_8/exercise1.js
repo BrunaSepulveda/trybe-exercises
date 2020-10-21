@@ -71,3 +71,5 @@ function authorBornIn1947() {
 };
 
 assert.equal(authorBornIn1947(), 'Stephen King');
+
+
